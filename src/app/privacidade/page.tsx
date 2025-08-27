@@ -2,14 +2,8 @@
 import Image from "next/image";
 import Redondo from "../../../public/Redondo.png";
 import LigaLogo from "../../../public/LigaLogo.png";
-import { useRouter } from "next/navigation";
-import { FiArrowUpRight } from "react-icons/fi";
 export default function Home() {
-  const router = useRouter();
 
-  const goToHome = () => {
-    router.push("/suporte");
-  };
   return (
     <div className="min-h-screen bg-white text-black">
       <div className="relative w-full h-52 md:h-70 lg:h-66 flex justify-center overflow-hidden text-center text-white">
@@ -99,29 +93,6 @@ export default function Home() {
           <p>
             Podemos atualizar esta Política de Privacidade periodicamente.
             Notificaremos sobre mudanças relevantes no aplicativo.
-          </p>
-          <h2 className="text-xl md:text-2xl mb-4 lg:text-3xl font-bold mt-4">
-            7.Contato
-          </h2>
-          <p style={{ display: "flex", flexDirection: "row", gap: "6px" }}>
-            Em caso de dúvidas, entre em contato:
-            <button
-              onClick={goToHome}
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-
-                color: "#000",
-                cursor: "pointer",
-                fontSize: "16px",
-                fontWeight: "600",
-                transition: "all 0.3s ease",
-              }}
-            >
-              E-Mail{" "}
-              <FiArrowUpRight style={{ alignItems: "center" }} size={17} />
-            </button>
           </p>
         </div>
       </main>
